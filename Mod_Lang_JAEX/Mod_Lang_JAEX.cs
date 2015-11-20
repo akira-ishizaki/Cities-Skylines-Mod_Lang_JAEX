@@ -190,7 +190,7 @@ namespace Mod_Lang_JAEX
 			{
 				CopyLocaleAndReloadLocaleManager ();
 
-				return "Japanese EX localization Mod";
+				return "Japanese localization EX Mod";
 			}
 		}
 
