@@ -1,13 +1,8 @@
-﻿using ICities;
+﻿using ColossalFramework.Plugins;
+using ICities;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ColossalFramework.Plugins;
 using System.Reflection;
-using System.Diagnostics;
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // !
@@ -18,7 +13,7 @@ using System.Diagnostics;
 
 namespace Mod_Lang_JAEX
 {
-	public class Mod_Lang_JAEX : IUserMod
+    public class Mod_Lang_JAEX : IUserMod
 	{
 		private string locale_name = "jaex";
 
@@ -196,7 +191,7 @@ namespace Mod_Lang_JAEX
 
 		public string Description
 		{
-			get { return "Japanese Localization v7.5 which is replaced with Japanese city names, district names, building names and person's names, by volunteers on 2ch.net."; }
+			get { return "Japanese Localization v8.1 which is replaced with Japanese city names, district names, building names and person's names, by volunteers on 2ch.net."; }
 		}
 	}
 }
