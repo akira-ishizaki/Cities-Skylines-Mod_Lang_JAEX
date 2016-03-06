@@ -1,0 +1,108 @@
+﻿Use template milestone	テンプレートのマイルストーンを使用
+Use color variations	カラーバリエーションを使用
+Availability	利用できるモード
+Circular	道路接続不要
+Expand front yard	庭の生成を許可
+Flatten terrain	地形を平らにする
+Electricity Consumption	電力消費
+Construction Cost	建設費
+Fire Hazard	火災
+Fire Tolerance	防火性
+Garbage Accumulation	ゴミの排出量
+Maintenance Cost	維持費
+Noise Radius	騒音の範囲
+Pollution Accumulation	汚染の排出量
+Pollution Radius	汚染の範囲
+Sewage Accumulation	下水の排出量
+Water Consumption	水消費
+Uneducated Workers	教育を受けていない労働者
+Educated Workers	初等教育を受けた労働者
+Well Educated Workers	中等教育を受けた労働者
+Highly Educated Workers	高等教育を受けた労働者
+Animal Count	動物の数
+Collect Radius	収集範囲
+Electricity Production	発電量
+Garbage Capacity	ゴミの収容能力
+Garbage Consumption	ゴミの処理能力
+Garbage Truck Count	ゴミ収集車の数
+Building general	建物一般
+Gameplay common	ゲームプレイ共通
+Workers	労働者
+Pollution	汚染
+Water	水
+Electricity	電気
+Material	素材
+Color Variation #0	カラーバリエーション #0
+Color Variation #1	カラーバリエーション #1
+Color Variation #2	カラーバリエーション #2
+Color Variation #3	カラーバリエーション #3
+Ground Offset	地上階の地面からの距離(m)
+First Height	第一階層の高さ(m)
+Other Height	他の各階の高さ(m)
+Floor Count	床付き階層を地上何mまで作るか
+Noise Accumulation	騒音の排出量
+Tourists	観光客
+Low Wealth Tourists	貧しい観光客
+Medium Wealth Tourists	中流の観光客
+High Wealth Tourists	裕福な観光客
+Entertainment Accumulation	娯楽の効果
+Entertainment Radius	娯楽の効果範囲
+Trailers	トレーラー
+Trailer count	トレーラーの数
+Trailer asset	トレーラーのアセット
+Lights	車両のライトの位置
+Position0	ポジション0
+Position1	ポジション1
+Position2	ポジション2
+Position3	ポジション3
+Position4	ポジション4
+Position5	ポジション5
+Vehicle general	車両一般
+Max speed	制限速度
+Maintenance capacity	メンテナンス処理量
+Cargo capacity	最大貨物収容数
+Patient capacity	最大患者収容数
+Patient Capacity	最大患者収容数
+Capacity	最大収容数
+Firefighting rate	消火レート
+Crime capacity	犯罪処理量
+Criminal capacity	最大犯罪者収容数
+Passenger capacity	最大乗客収容数
+PassengerCapacity	最大乗客収容数
+Cargo Capacity	最大貨物収容数
+Maintenance Radius	道路管理半径
+Maintenance Truck Count	整備車両数
+Resource Capacity	最大資源収容量
+Resource Consumption	資源消費量
+Heating	暖房
+Heat Production	熱の供給量
+Outlet Pollution	汚染
+Max Water Distance	水辺との最大距離差
+Sewage Outlet	下水の排出
+Use Ground Water	地下水の利用
+Water Intake	取水量
+Ambulance Count	救急車の数
+Curing Rate	治療レート
+Healthcare Accumulation	医療施設の効果
+Healthcare Radius	医療施設の効果範囲
+Burial Rate	遺体処理レート
+Corpse Capacity	最大遺体収容量
+Deathcare Accumulation	葬儀施設の効果
+Deathcare Radius	葬儀施設の効果範囲
+Grave Count	墓の数
+Hearse Count	霊柩車の数
+Fire Department Accumulation	消防施設の効果
+Fire Department Radius	消防施設の効果範囲
+Fire Truck Count	消防車の数
+Average Sentence Length	平均刑期
+Jail Capacity	囚人収容数
+Police Car Count	パトカーの数
+Police Department Accumulation	警察施設の効果
+Police Department Radius	警察施設の効果範囲
+Education Accumulation	教育施設の効果
+Education Radius	教育施設の効果範囲
+Student Count	学生数
+Attractiveness Accumulation	観光客誘引の能力
+Monument Level	モニュメントのレベル
+Construction Time	建設時間
+Size	サイズ

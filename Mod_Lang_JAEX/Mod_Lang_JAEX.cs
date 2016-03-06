@@ -1,4 +1,5 @@
-﻿using ColossalFramework.Plugins;
+﻿using ColossalFramework;
+using ColossalFramework.Plugins;
 using ICities;
 using System;
 using System.IO;
@@ -192,6 +193,64 @@ namespace Mod_Lang_JAEX
 		public string Description
 		{
 			get { return "Japanese Localization v8.1 which is replaced with Japanese city names, district names, building names and person's names, by volunteers on 2ch.net."; }
-		}
-	}
+        }
+
+        public const string SETTINGFILENAME = "Mod_Lang_JAEX.xml";
+
+        public static string configPath;
+
+        public static ModConfiguration ModConf;
+
+        public void OnSettingsUI(UIHelperBase helper)
+        {
+            this.InitConfigFile();
+            UIHelperBase group = helper.AddGroup("設定");
+            group.AddCheckbox("アセットエディタの各プロパティを日本語化する", ModConf.LocalizeAssetEditor, delegate (bool isChecked)
+            {
+                Mod_Lang_JAEX.ModConf.LocalizeAssetEditor = isChecked;
+                ModConfiguration.Serialize(Mod_Lang_JAEX.configPath, Mod_Lang_JAEX.ModConf);
+            });
+        }
+
+        private void InitConfigFile()
+        {
+            try
+            {
+                string pathName = GameSettings.FindSettingsFileByName("gameSettings").pathName;
+                string str = "";
+                if (pathName != "")
+                {
+                    str = Path.GetDirectoryName(pathName) + Path.DirectorySeparatorChar;
+                }
+                Mod_Lang_JAEX.configPath = str + SETTINGFILENAME;
+                Mod_Lang_JAEX.ModConf = ModConfiguration.Deserialize(Mod_Lang_JAEX.configPath);
+                if (Mod_Lang_JAEX.ModConf == null)
+                {
+                    Mod_Lang_JAEX.ModConf = ModConfiguration.Deserialize(SETTINGFILENAME);
+                    if (Mod_Lang_JAEX.ModConf != null && ModConfiguration.Serialize(str + SETTINGFILENAME, Mod_Lang_JAEX.ModConf))
+                    {
+                        try
+                        {
+                            File.Delete(SETTINGFILENAME);
+                        }
+                        catch
+                        {
+                        }
+                    }
+                }
+                if (Mod_Lang_JAEX.ModConf == null)
+                {
+                    Mod_Lang_JAEX.ModConf = new ModConfiguration();
+                    if (!ModConfiguration.Serialize(Mod_Lang_JAEX.configPath, Mod_Lang_JAEX.ModConf))
+                    {
+                        Mod_Lang_JAEX.configPath = SETTINGFILENAME;
+                        ModConfiguration.Serialize(Mod_Lang_JAEX.configPath, Mod_Lang_JAEX.ModConf);
+                    }
+                }
+            }
+            catch
+            {
+            }
+        }
+    }
 }
