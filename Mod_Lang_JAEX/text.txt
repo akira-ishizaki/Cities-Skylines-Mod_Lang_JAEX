@@ -1,7 +1,7 @@
 ﻿Use template milestone	テンプレートのマイルストーンを使用
 Use color variations	カラーバリエーションを使用
 Availability	利用できるモード
-Circular	道路接続不要
+Circular	円状の配置スペース
 Expand front yard	庭の生成を許可
 Flatten terrain	地形を平らにする
 Electricity Consumption	電力消費
@@ -26,7 +26,7 @@ Garbage Capacity	ゴミの収容能力
 Garbage Consumption	ゴミの処理能力
 Garbage Truck Count	ゴミ収集車の数
 Building general	建物一般
-Gameplay common	ゲームプレイ共通
+Gameplay common	共通
 Workers	労働者
 Pollution	汚染
 Water	水
@@ -36,10 +36,10 @@ Color Variation #0	カラーバリエーション #0
 Color Variation #1	カラーバリエーション #1
 Color Variation #2	カラーバリエーション #2
 Color Variation #3	カラーバリエーション #3
-Ground Offset	地上階の地面からの距離(m)
-First Height	第一階層の高さ(m)
-Other Height	他の各階の高さ(m)
-Floor Count	床付き階層を地上何mまで作るか
+Ground Offset	地上階の高さ(m)
+First Height	第一フロア部の高さ(m)
+Other Height	フロア割のピッチ(m)
+Floor Count	フロア割の最終高さ(m)
 Noise Accumulation	騒音の排出量
 Tourists	観光客
 Low Wealth Tourists	貧しい観光客
