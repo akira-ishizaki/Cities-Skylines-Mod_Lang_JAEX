@@ -18,10 +18,12 @@ namespace Mod_Lang_JAEX
 	{
 		private string locale_name = "jaex";
 
-		//
-		//the following OS detect code is referring http://stackoverflow.com/questions/10138040/how-to-detect-properly-windows-linux-mac-operating-systems
-		//
-		public enum Platform
+        private bool initialized;
+
+        //
+        //the following OS detect code is referring http://stackoverflow.com/questions/10138040/how-to-detect-properly-windows-linux-mac-operating-systems
+        //
+        public enum Platform
 		{
 			Windows,
 			Linux,
@@ -184,9 +186,13 @@ namespace Mod_Lang_JAEX
 		{
 			get
 			{
-				CopyLocaleAndReloadLocaleManager ();
+                if (!initialized)
+                {
+                    CopyLocaleAndReloadLocaleManager();
+                }
+                initialized = true;
 
-				return "Japanese localization EX Mod";
+                return "Japanese localization EX Mod";
 			}
 		}
 
